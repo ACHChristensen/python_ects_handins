@@ -15,9 +15,9 @@ def cooridinates_of_monument(file, name = None, id = None):
             monument_info = df.loc[df['id'] == id]
         else: 
             monument_info = df.loc[df['navn'] == name]
-        x = monument_info['x']
-        y = monument_info['y']
-        return {"x": float(x), "y":float(y)}
+        longitude = monument_info['longitude']
+        latitude = monument_info['latitude']
+        return {"longitude": float(longitude), "latitude":float(latitude)}
     except TypeError:
         print("Needs either name or id for momunment")
 
