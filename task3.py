@@ -20,6 +20,7 @@ def cooridinates_of_monument(file, name = None, id = None):
         return {"longitude": float(longitude), "latitude":float(latitude)}
     except TypeError:
         print("Needs either name or id for momunment")
+        print(df)
 
     
 if __name__ == '__main__':
